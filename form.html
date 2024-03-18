@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+    <head>
+        <title>Comunhão de verão</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <link rel="icon" href="images/cacau.png" type="image/x-icon">
+        <!-- Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link  rel="stylesheet" href="css/form.css">
+        <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    </head>
+    <body>
+        <form id="meuFormulario">
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+    
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" min="1" required><br>
+    
+            <label for="telefone">Número de Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" required>
+            <small>Formato: (99) 99999-9999</small>
+
+    
+            <label for="opcao">Escolha uma opção:</label><br>
+            <select id="opcao" name="opcao" required>
+                <option value="">Selecione uma opção</option>
+                <option value="day-use">Day-use</option>
+                <option value="hospedagem-cecre">Hospedagem no CECRE</option>
+                <option value="hospedagem-onibus">Hospedagem mais ônibus</option>
+            </select><br>
+    
+            <input type="submit" value="Enviar">
+            <a href="index.html" class="voltar-btn">Voltar para a página inicial</a>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
